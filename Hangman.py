@@ -1,10 +1,6 @@
 import random
 from kalamat import kalamat
 from scaffold import print_scaffold
-# scafold hangman art
-
-
-
 
 
 # Create a list for choose from it randomely
@@ -28,7 +24,7 @@ endOfTheGame = False
 while not endOfTheGame:
     # get a char from user
 
-    guess = input("type your char:").lower()
+    guess = input("character ro type kon: ").lower()
 
     if guess in emptyList:
         print(f"{guess} ro  ghablan gofte boodi!!!!!!!!")
@@ -41,15 +37,16 @@ while not endOfTheGame:
 
     if guess not in randomChoose:
         lives += 1
-        print("not match")
+        print("oh oh in ke nabood")
 
     print(emptyList)
     print_scaffold(lives)
 
     if lives == 6:
-        print(f"you loose!!!!!!/n the right word was {randomChoose.upper()}")
+        print(
+            f":D :D  hahahahahha!!!!!natoonesti ke........kalameye dorost in bood ========> {randomChoose.upper()}")
         break
 
     if "_" not in emptyList:
         endOfTheGame = True
-        print(f"you won")
+        print(f"baba barikala to bordi ".capitalize())
