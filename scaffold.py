@@ -48,6 +48,7 @@ def print_scaffold(guesses):  # prints the scaffold
         print("|	/ ")
         print("|________")
     elif (guesses == 6):
+        
         print("_________")
         print("|	 |")
         print("|	 O")
